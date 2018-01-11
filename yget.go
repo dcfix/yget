@@ -10,13 +10,13 @@ import (
 )
 
 func main() {
-  uri := flag.String("Uri", , "the web page to grab")
-  filename := flag.String("filename", , "The name of the file to save to")
+  uri := flag.String("Uri", "", "the web page to grab")
+  filename := flag.String("filename", "", "The name of the file to save to")
   delay := flag.Int("Delay", 0, "Number of seconds to pause before retrieving the web page")
 
   flag.Parse()
 
-  duration := time.Duration(*delay) * time.Second 
+  duration := time.Duration(*delay) * time.Second
   time.Sleep(duration)
 
   err := downloadFile(*filename, *uri)
