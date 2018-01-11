@@ -11,7 +11,7 @@ import (
 
 func main() {
   uri := flag.String("Uri", "", "the web page to grab")
-  filename := flag.String("filename", "", "The name of the file to save to")
+  filename := flag.String("Filename", "", "The name of the file to save to")
   delay := flag.Int("Delay", 0, "Number of seconds to pause before retrieving the web page")
 
   flag.Parse()
